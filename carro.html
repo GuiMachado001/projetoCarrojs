@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="teste.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="containerCarro">
+
+        <div class="fundo">
+            <div class="cenario">
+                <div class="cloud" ></div>
+            </div><!--end cenario-->
+            <div class="estrada"></div>
+
+       <div class="carro" id="carro">
+        <div id="carcaca1">
+            <div id="carcaca2">
+                <div class="roda1"></div>
+                <div class="roda2"></div>
+
+                <div class="aro1" id="roda1"></div>
+                <div class="aro2" id="roda2"></div>   
+
+                <div class="janela1"></div>
+                <div class="janela2"></div>
+        </div> <!--end carcaça2-->
+    </div> <!--end carcaça1-->  
+    </div> <!--end fundo-->
+    </div>
+</div>
+
+
+    <div class="containerAcction">
+        <div class="containerOnOff">
+            <input id="ligarCarro" type="submit" value="Ligar" onclick="ligar(), nivel()"> <br><br>
+            <input id="desligarCarro" type="submit" value="desligar" onclick="desligar(), nivel()">      
+        </div>
+        <div class="containerAbastecer">
+            <input type="submit" id="abastecer" value="Abastecer" onclick="abastecer(), nivel()">
+            <span>Nível: </span>
+            <span id="nivel"></span >
+        </div>
+    </div>
+    </body>
+</html>
